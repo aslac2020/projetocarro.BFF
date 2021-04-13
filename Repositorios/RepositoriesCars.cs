@@ -114,7 +114,7 @@ namespace projetocarro.BFF.Repositorios
                 client.Timeout = -1;
                 var requestClient = new RestRequest(Method.PUT);
                 requestClient.AddHeader("Content-Type", "application/json");
-                requestClient.AddParameter("application/json", JsonConvert.SerializeObject(updateCars), ParameterType.RequestBody);
+                requestClient.AddParameter("application/json", JsonConvert.SerializeObject(cars), ParameterType.RequestBody);
                 IRestResponse response = client.Execute(requestClient);
                 updateCars = JsonConvert.DeserializeObject<UpdateCarsResponse>(response.Content);
                 return updateCars.id;
