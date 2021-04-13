@@ -10,5 +10,6 @@ namespace projetocarro.BFF.DTO.ReturnCarById
     {
         public Cars cars { get; set; }
         public string msg { get; set; }
+        public int id { get; set; }
     }
 }

@@ -7,7 +7,6 @@ namespace projetocarro.BFF.DTO.UpdateCars
 {
     public class UpdateCarsRequest
     {
-        public int id { get; set; }
         public string Model { get; set; }
         public string Cor { get; set; }
         public int Year { get; set; }

@@ -32,16 +32,16 @@ namespace projetocarro.BFF
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddScoped<IDeleteCarsUseCase, DeleteCarsUseCase>();
+            services.AddScoped<IDeleteCarsUseCase, DeleteCarsUseCase>();
             services.AddScoped<IAddCarsUseCase, AddCarsUseCase>();
-            //services.AddScoped<IReturnCarsIdUseCase, ReturnCarsIdUseCase>();
-            //services.AddScoped<IReturnListCarsUseCase, ReturnListCarsUseCase>();
-            //services.AddScoped<IUpdateCarsUseCase, UpdateCarsUseCase>();
+            services.AddScoped<IReturnCarsIdUseCase, ReturnCarsIdUseCase>();
+            services.AddScoped<IReturnListCarsUseCase, ReturnListCarsUseCase>();
+            services.AddScoped<IUpdateCarsUseCase, UpdateCarsUseCase>();
 
             services.AddScoped<IRepositoriesCars, RepositoriesCars>();
 
             services.AddScoped<IAddCarsAdapter, AddCarsAdapter>();
-            //services.AddScoped<IUpdateCarsAdapter, UpdateCarsAdapter>();
+            services.AddScoped<IUpdateCarsAdapter, UpdateCarsAdapter>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

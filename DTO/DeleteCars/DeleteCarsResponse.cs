@@ -7,6 +7,6 @@ namespace projetocarro.BFF.DTO.DeleteCars
 {
     public class DeleteCarsResponse
     {
-        public string msg { get; set; }
+        public string msg { get; set; } 
     }
 }
